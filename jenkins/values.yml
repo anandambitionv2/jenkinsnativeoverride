@@ -1,9 +1,10 @@
+
 jenkins:
-            
-            service:
-              type: LoadBalancer
-            
-            # Optional: Expose slave agent connections if your terraform pod needs external access
-            slaveService:
-              type: ClusterIP
-            namespace: jenkins
+  
+  name: jenkinsapp
+  namespace: jenkins
+  service:
+    type: LoadBalancer
+  slaveService:
+    type: ClusterIP
+
