@@ -1,10 +1,10 @@
-
 jenkins:
   
-  name: jenkinsapp
   namespace: jenkins
   service:
     type: LoadBalancer
+    port: 8080
   slaveService:
     type: ClusterIP
-
+    port: 50000
+ 
