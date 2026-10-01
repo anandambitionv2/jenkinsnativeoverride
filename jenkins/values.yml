@@ -6,3 +6,4 @@ jenkins:
             # Optional: Expose slave agent connections if your terraform pod needs external access
             slaveService:
               type: ClusterIP
+            namespace: jenkins
